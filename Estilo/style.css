@@ -1,0 +1,18 @@
+.hero {
+    background-image: url(../Assets/Hero\ section.jpg);
+    height: 100vh;
+}
+
+#btnStart {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    border: none;
+    text-align: center;
+    height: 12rem;
+    margin-top: 10rem;    
+}
+
+#juegosDisponibles {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 5rem;
+}
