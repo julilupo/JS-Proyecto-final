@@ -149,12 +149,22 @@ dibujarCatalogoJuegos ();
 
 botonStart.onclick = () => location.href='#juegosDisponibles';
 
-//alert ("¡10 % de descuento en TODOS los juegos! ¡Sólo por hoy!");
 
-let elegirJuego = parseInt (prompt ("¿Qué videojuego quisieras comprar? (Elije el título del 1 al 8): \n 1- Tales of Berseria \n 2- Baldur's Gate 3 \n 3- Hollow Knight \n 4- Divine Divinity \n 5- Return to Monkey Island \n 6- Final Fantasy IX \n 7- Cuphead \n 8- Divinity: Original Sin 2"));
+// Declaro la variable
+
+let elegirJuego = parseInt (prompt ("¿Qué videojuego quisieras comprar? (Elije el título del 1 al 8 ó 0 para Salir): \n 1- Tales of Berseria \n 2- Baldur's Gate 3 \n 3- Hollow Knight \n 4- Divine Divinity \n 5- Return to Monkey Island \n 6- Final Fantasy IX \n 7- Cuphead \n 8- Divinity: Original Sin 2 \n 0- Salir"));
+
+// Realizo un algoritmo condicional y uno con ciclo para cumplir con la consigna de ésta entrega. 
+
 
 if (elegirJuego != 0 && elegirJuego <= 8) {
-    console.log("¡Gracias por comprar con nosotros!");
-}else{
-    console.log("Parece que no seleccionaste un número correcto");
-}
+console.log("¡Gracias por comprar con nosotros!");
+while (elegirJuego != 0 && elegirJuego < 9) {
+    elegirJuego = parseInt (prompt ("¿Qué videojuego quisieras comprar? (Elije el título del 1 al 8 ó 0 para Salir): \n 1- Tales of Berseria \n 2- Baldur's Gate 3 \n 3- Hollow Knight \n 4- Divine Divinity \n 5- Return to Monkey Island \n 6- Final Fantasy IX \n 7- Cuphead \n 8- Divinity: Original Sin 2 \n 0- Salir"));
+};
+} else if (elegirJuego == 0) {
+    console.log("¡Gracias por visitarnos!")
+} else {
+console.log("Parece que no seleccionaste un número correcto");
+};
+
